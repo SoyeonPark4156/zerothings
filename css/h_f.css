@@ -1,0 +1,151 @@
+.container { 
+    width: 1100px;
+    margin: 0 auto;
+ } 
+
+/* 탑배너 */
+.top_banner {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    background-color: #97B38B;
+    color:#fff;
+    text-align: center;
+    font-size: 1em;
+    font-weight: 300;
+    overflow: hidden;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 9999999;
+}
+.tb_item {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 100%;
+}
+.tb_delete{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    font-size: 1em;
+    border: none;
+    background: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+/*헤더*/
+.header{
+    padding-top: 40px;
+    width: 100%;
+    display: flex;
+    border-bottom: 1px solid #97B38B;
+}
+.header_left{
+    width: 10%;
+}
+.header_center{
+    width: 80%;
+}
+.header_logo{
+    cursor: pointer;
+    width: 30vw;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 40px 0;
+}
+.header_logo img{
+    width: 100%;
+}
+.header_menu{
+    width: 100%;
+    display: flex;
+}
+.menu_ul{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: #737373;
+}
+.menu_li{
+    padding: 10px 30px;
+    position: relative;
+}
+.menu_li:hover {
+    color:black;
+}
+.header_right{
+    display: flex;
+    align-items: flex-end;
+}
+.icon_list{
+    display: flex;
+    gap: 10px;
+    position: relative;
+}
+.h_icon{
+    width: 20px;
+    padding: 10px 5px;
+}
+.icon_list div a img{
+    width: 100%;
+}
+.join_speech_bubble{
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto;
+    font-weight: 400;
+    font-size: 12px;
+    color: #fff;
+    background-color: #97B38B;
+    border-radius: 6px;
+    z-index: 999999;
+    text-align: center;
+    letter-spacing: 0.02em;
+    line-height: 1.5em;
+    padding: 0.7em 1em;
+    width: 76px;
+}
+.join_speech_bubble::before{
+    content: "";
+    position: absolute;
+    top: 1px;
+    left: 50%;
+    transform: translate(-50%,-100%);
+    transform: translateZ(50%);
+    border: 5px solid #97B38B;
+    z-index: 999999;
+}
+.drop_menu_ul{
+    display: none;
+    
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 999999;
+    
+    background-color: #97b38be0;
+}
+.drop_menu_li a{
+    padding: 20px;
+    line-height: 40px;
+    font-size: 15px;
+    color: #fff;
+    font-weight: 300;  
+}
+#shop_menu:hover .drop_menu_ul{
+    display: block;
+}
+.drop_menu_li a:hover{
+    color: #737373;
+}

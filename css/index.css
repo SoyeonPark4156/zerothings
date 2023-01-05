@@ -1,0 +1,60 @@
+.main_banner_outer{
+    width: 100%;
+    height: 50vh;
+
+    overflow: hidden;
+    cursor: pointer;
+    position: relative; 
+}
+.main_banner{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.mb_img{
+    width: 100%;
+    height: 100%
+}
+#mb1{background: url(../img/main_banner1.jpg) no-repeat center / cover;}
+#mb2{background: url(../img/main_banner2.jpg) no-repeat center / cover;}
+#mb3{background: url(../img/main_banner3.jpg) no-repeat center / cover;}
+#mb4{background: url(../img/main_banner4.jpg) no-repeat center / cover;}
+
+.mb_slide_btn{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    z-index: 999999;
+}
+#prev_btn{
+    background: url(../img/prev_icon.png) no-repeat center / contain;
+    left: 0;
+}
+#next_btn{
+    background: url(../img/next_icon.png) no-repeat center / contain;
+    right: 0;
+}
+.mb_indicator {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+ 
+    display: flex;
+    gap: 10px;
+    z-index: 999999;
+ }
+ .mb_indi_dot{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    z-index: 9999;
+ }
+ .indi_active{
+    background-color: #fff;
+ }
