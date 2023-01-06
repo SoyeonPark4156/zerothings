@@ -28,7 +28,15 @@ $(document).ready(function(){
         $(".top_banner").remove();
     })
 
-    //헤더(SHOP 메뉴) - 드롭다운 메뉴바
-    
+    //반응형 햄버거 버튼
+    $(document).on('click','.side_ham_box',function(){
+        $(".side_menu_wrap").css({
+            display:"block"
+        })
+        $('.side_menu_box').css({
+            left:0
+        })
+    })
+
   
  });   

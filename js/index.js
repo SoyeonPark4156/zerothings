@@ -106,15 +106,7 @@ $(document).ready(function(){
 
     //indicator 클릭하는거에 따라
     $(document).on('click', '.mb_indi_dot', function(){
-
-        // 양수 - 우측꺼 누름, 음수 - 좌측꺼 누름
-        let indi_gap = $(this).index() - $('.indi_active').index(); 
-  
-        if(indi_gap > 0)
         mb_slide(curr_mb_idx % mb_count, $(this).index()); 
-  
-        else if(indi_gap < 0)
-        mb_slide(curr_mb_idx % mb_count, $(this).index());  
      })
 
 });
@@ -126,7 +118,7 @@ function mb_slide(o_idx, c_idx) {
         mb_slide_chk = !mb_slide_chk;
         setTimeout(function(){  
             mb_slide_chk = !mb_slide_chk; 
-        }, 1000);
+        }, 500);
 
         // 나갈판(fadeOut)
         // 나갈때 확 나가게 하려고 딜레이 줬다가 fadeout에 시간을 0줌
@@ -151,5 +143,20 @@ function auto_slide(){
 };
 
 auto_slide();
+
+////////////////////////////////////////////////////////////////////////////////
+/* 스크롤 fadeInUp 이벤트 */
+$(document).ready(function(){
+    $(window).scroll(function(){
+        $('.fadein_up').each(function(i){
+            let top_of_this = $(this).offset().top + $(this).outerHeight();
+            let bottom_of_window = $(window).scrollTop() + $(window).height();
+            if( bottom_of_window > top_of_this/2 ){
+                $(this).animate({'opacity':'1','margin-top':'0'},500);
+            }
+            
+        })
+    })
+})
 
 
