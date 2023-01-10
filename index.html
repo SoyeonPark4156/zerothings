@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,205 +10,293 @@
     <link rel="stylesheet" href="./css/commom.css">
     <link rel="stylesheet" href="./css/h_f.css">
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.css" />
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="./js/h_f.js"></script>
     <script defer src="./js/index.js"></script>
+
 </head>
+
 <body>
-<div class="top_banner">
-    <div class="tb_item">제로띵스에 오신걸 환영합니다.🌿</div>
-    <div class="tb_item">일상에 스며드는 초록색 소비를 제안합니다.🍀</div>
-    <div class="tb_item">건강한 라이프스타일 사이클을 경험해보세요.🌳</div>
-    <button type="button" class="tb_delete">X</button>
-</div>
-<div id="wrap">
-    <!-- 헤더 -->
-    <header class="header">
-        <div class="header_left">
-            <div class="side_ham_box">
+    <div class="top_banner">
+        <div class="tb_item">제로띵스에 오신걸 환영합니다.🌿</div>
+        <div class="tb_item">일상에 스며드는 초록색 소비를 제안합니다.🍀</div>
+        <div class="tb_item">건강한 라이프스타일 사이클을 경험해보세요.🌳</div>
+        <button type="button" class="tb_delete">X</button>
+    </div>
+    <div id="wrap">
+        <!-- 헤더 -->
+        <header class="header">
+            <div class="header_left">
+                <div class="side_ham_box">
                     <div class="side_ham_line"></div>
                     <div class="side_ham_line"></div>
                     <div class="side_ham_line"></div>
                 </div>
-            <div class="side_menu_wrap">
-                <div class="side_menu_box">
-                    <div class="side_menu_top">
-                        <a href=""><img src="./img/메인로고.png" alt="logo"></a>
-                        <div class="h_icon join_icon"><a href=""></a></div>
+                <div class="side_menu_wrap">
+                    <div class="side_menu_box">
+                        <div class="side_menu_top">
+                            <a href=""><img src="./img/메인로고.png" alt="logo"></a>
+                            <div class="h_icon join_icon"><a href=""></a></div>
+                        </div>
+                        <ul class="side_menu_ul">
+                            <li class="side_menu_li"><a href="">ABOUT</a></li>
+                            <li class="side_menu_li">
+                                <a href="">SHOP</a>
+
+                            </li>
+                            <li class="side_menu_li"><a href="">느린도서관</a></li>
+                            <li class="side_menu_li"><a href="">Q&A</a></li>
+                            <li class="side_menu_li"><a href="">게시판</a></li>
+                            <li class="side_menu_li"><a href="">B2B</a></li>
+                        </ul>
                     </div>
-                    <ul class="side_menu_ul">
-                        <li class="side_menu_li"><a href="">ABOUT</a></li>
-                        <li class="side_menu_li">
+                    <button class="side_menu_close"></button>
+                </div>
+            </div>
+            <div class="header_center">
+                <div class="header_logo"><a href="#"><img src="./img/메인로고.png" alt="logo"></a></div>
+                <div class="header_menu">
+                    <ul class="menu_ul">
+                        <li class="menu_li"><a href="">ABOUT</a></li>
+                        <li class="menu_li" id="shop_menu">
                             <a href="">SHOP</a>
-                            
+                            <ul class="drop_menu_ul">
+                                <li class="drop_menu_li"><a href="">전체</a></li>
+                                <li class="drop_menu_li"><a href="">선물 세트</a></li>
+                                <li class="drop_menu_li"><a href="">리빙 제품</a></li>
+                                <li class="drop_menu_li"><a href="">주방 제품</a></li>
+                                <li class="drop_menu_li"><a href="">욕실 제품</a></li>
+                                <li class="drop_menu_li"><a href="">비건</a></li>
+                            </ul>
                         </li>
-                        <li class="side_menu_li"><a href="">느린도서관</a></li>
-                        <li class="side_menu_li"><a href="">Q&A</a></li>
-                        <li class="side_menu_li"><a href="">게시판</a></li>
-                        <li class="side_menu_li"><a href="">B2B</a></li>
+                        <li class="menu_li"><a href="">느린도서관</a></li>
+                        <li class="menu_li"><a href="">Q&A</a></li>
+                        <li class="menu_li"><a href="">게시판</a></li>
+                        <li class="menu_li"><a href="">B2B</a></li>
                     </ul>
                 </div>
-                <button class="side_menu_close"></button>
             </div>
-        </div>
-        <div class="header_center">
-            <div class="header_logo"><a href="#"><img src="./img/메인로고.png" alt="logo"></a></div>
-            <div class="header_menu">
-                <ul class="menu_ul">
-                    <li class="menu_li"><a href="">ABOUT</a></li>
-                    <li class="menu_li" id="shop_menu">
-                        <a href="">SHOP</a>
-                        <ul class="drop_menu_ul">
-                            <li class="drop_menu_li"><a href="">전체</a></li>
-                            <li class="drop_menu_li"><a href="">선물 세트</a></li>
-                            <li class="drop_menu_li"><a href="">리빙 제품</a></li>
-                            <li class="drop_menu_li"><a href="">주방 제품</a></li>
-                            <li class="drop_menu_li"><a href="">욕실 제품</a></li>
-                            <li class="drop_menu_li"><a href="">비건</a></li>
-                        </ul>
-                    </li>
-                    <li class="menu_li"><a href="">느린도서관</a></li>
-                    <li class="menu_li"><a href="">Q&A</a></li>
-                    <li class="menu_li"><a href="">게시판</a></li>
-                    <li class="menu_li"><a href="">B2B</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="header_right">
-            <div class="icon_list">
-                <div class="h_icon search_icon"><a href=""></a></div>
-                <div class="h_icon join_icon"><a href=""></a></div>
-                <div class="h_icon shop_bag_icon"><a href=""></a></div>
-                <div class="join_speech_bubble">JOIN NOW +1,000</div>
-            </div>
-        </div>
-    </header>
-    <!-- main -->
-    <main>
-        <!-- 메인슬라이드 -->
-        <div class="main_banner_outer">
-            <div class="main_banner"><a href=""><div class="mb_img" id="mb1"></div></a></div>
-            <div class="main_banner"><a href=""><div class="mb_img" id="mb2"></div></a></div>
-            <div class="main_banner"><a href=""><div class="mb_img" id="mb3"></div></a></div>
-            <div class="main_banner"><a href=""><div class="mb_img" id="mb4"></div></a></div>
-
-            <div class="mb_slide_btn" id="prev_btn"></div>
-            <div class="mb_slide_btn" id="next_btn"></div>
-
-            <div class="mb_indicator"></div>
-        </div>
-        <div class="category_banner_sec fadein_up">
-            <div class="contents_area">
-                <div class="category_banner">
-                    <div class="ad_ment"><h5>초록색 소비공간 "제로띵스"</h5>쓰레기 연구_<br>생활에서 쓰레기가 가장 많이<br>나오는 곳을 선택하세요.</div>
-                    <div class="trash_icon"></div>
-                    <div class="scroll_array">Scroll <div class="down_arrow">↓</div></div>
+            <div class="header_right">
+                <div class="icon_list">
+                    <div class="h_icon search_icon"><a href=""></a></div>
+                    <div class="h_icon join_icon"><a href=""></a></div>
+                    <div class="h_icon shop_bag_icon"><a href=""></a></div>
+                    <div class="join_speech_bubble">JOIN NOW +1,000</div>
                 </div>
             </div>
-        </div>
-        <div class="category_gallery_wrap">
-            <div class="contents_area">
-                <div class="category_gallery fadein_up">
-                    <div class="category_box fadein_up">
-                        <a href="">
-                            <div class="category_img_box">
-                                <div class="category_img" id="all_pro_img"></div>
-                            </div>
-                            <div class="catrgory_title_box">
-                                <div class="category_title">
-                                    <h5>ALL PRODUCT</h5>
-                                    <h2>전체 상품.</h2>
-                                </div>
-                                <div class="go_click">go →</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="category_box fadein_up">
-                        <a href="">
-                            <div class="category_img_box">
-                                <div class="category_img" id="gift_img"></div>
-                            </div>
-                            <div class="catrgory_title_box">
-                                <div class="category_title">
-                                    <h5>ZERO-WASTE GIFT</h5>
-                                    <h2>선물할 때.</h2>
-                                </div>
-                                <div class="go_click">go →</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="category_box fadein_up">
-                        <a href="">
-                            <div class="category_img_box">
-                                <div class="category_img" id="living_img"></div>
-                            </div>
-                            <div class="catrgory_title_box">
-                                <div class="category_title">
-                                    <h5>LIVING</h5>
-                                    <h2>일상에서.</h2>
-                                </div>
-                                <div class="go_click">go →</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="category_box fadein_up">
-                        <a href="">
-                            <div class="category_img_box">
-                                <div class="category_img" id="bath_img"></div>
-                            </div>
-                            <div class="catrgory_title_box">
-                                <div class="category_title">
-                                    <h5>BATH</h5>
-                                    <h2>욕실에서.</h2>
-                                </div>
-                                <div class="go_click">go →</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="category_box fadein_up">
-                        <a href="">
-                            <div class="category_img_box">
-                                <div class="category_img" id="kitchen_img"></div>
-                            </div>
-                            <div class="catrgory_title_box">
-                                <div class="category_title">
-                                    <h5>KICHEN</h5>
-                                    <h2>부엌에서.</h2>
-                                </div>
-                                <div class="go_click">go →</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="category_box fadein_up">
-                        <a href="">
-                            <div class="category_img_box">
-                                <div class="category_img" id="vegan_img"></div>
-                            </div>
-                            <div class="catrgory_title_box">
-                                <div class="category_title">
-                                    <h5>VEGAN</h5>
-                                    <h2>마켓갈 때.</h2>
-                                </div>
-                                <div class="go_click">go →</div>
-                            </div>
-                        </a>
+        </header>
+        <!-- main -->
+        <main>
+            <!-- 메인슬라이드 -->
+            <div class="main_banner_outer">
+                <div class="main_banner"><a href="">
+                        <div class="mb_img" id="mb1"></div>
+                    </a></div>
+                <div class="main_banner"><a href="">
+                        <div class="mb_img" id="mb2"></div>
+                    </a></div>
+                <div class="main_banner"><a href="">
+                        <div class="mb_img" id="mb3"></div>
+                    </a></div>
+                <div class="main_banner"><a href="">
+                        <div class="mb_img" id="mb4"></div>
+                    </a></div>
+
+                <div class="mb_slide_btn" id="prev_btn"></div>
+                <div class="mb_slide_btn" id="next_btn"></div>
+
+                <div class="mb_indicator"></div>
+            </div>
+            <div class="category_banner_sec fadein_up">
+                <div class="contents_area">
+                    <div class="category_banner">
+                        <div class="ad_ment">
+                            <h5>초록색 소비공간 "제로띵스"</h5>쓰레기 연구_<br>생활에서 쓰레기가 가장 많이<br>나오는 곳을 선택하세요.
+                        </div>
+                        <div class="trash_icon"></div>
+                        <div class="scroll_array">Scroll <div class="down_arrow">↓</div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="ad_banner_wrap fadein_up">
-            <div class="ad_banner_row">
-                <div class="ad_banner" id="ad_1"></div>
-                <div class="ad_banner" id="ad_2"></div>
+            <div class="category_gallery_wrap">
+                <div class="contents_area">
+                    <div class="category_gallery fadein_up">
+                        <div class="category_box">
+                            <a href="">
+                                <div class="category_img_box">
+                                    <div class="category_img" id="all_pro_img"></div>
+                                </div>
+                                <div class="catrgory_title_box">
+                                    <div class="category_title">
+                                        <h5>ALL PRODUCT</h5>
+                                        <h2>전체 상품.</h2>
+                                    </div>
+                                    <div class="go_click">go →</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="category_box">
+                            <a href="">
+                                <div class="category_img_box">
+                                    <div class="category_img" id="gift_img"></div>
+                                </div>
+                                <div class="catrgory_title_box">
+                                    <div class="category_title">
+                                        <h5>ZERO-WASTE GIFT</h5>
+                                        <h2>선물할 때.</h2>
+                                    </div>
+                                    <div class="go_click">go →</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="category_box">
+                            <a href="">
+                                <div class="category_img_box">
+                                    <div class="category_img" id="living_img"></div>
+                                </div>
+                                <div class="catrgory_title_box">
+                                    <div class="category_title">
+                                        <h5>LIVING</h5>
+                                        <h2>일상에서.</h2>
+                                    </div>
+                                    <div class="go_click">go →</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="category_box">
+                            <a href="">
+                                <div class="category_img_box">
+                                    <div class="category_img" id="bath_img"></div>
+                                </div>
+                                <div class="catrgory_title_box">
+                                    <div class="category_title">
+                                        <h5>BATH</h5>
+                                        <h2>욕실에서.</h2>
+                                    </div>
+                                    <div class="go_click">go →</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="category_box">
+                            <a href="">
+                                <div class="category_img_box">
+                                    <div class="category_img" id="kitchen_img"></div>
+                                </div>
+                                <div class="catrgory_title_box">
+                                    <div class="category_title">
+                                        <h5>KICHEN</h5>
+                                        <h2>부엌에서.</h2>
+                                    </div>
+                                    <div class="go_click">go →</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="category_box">
+                            <a href="">
+                                <div class="category_img_box">
+                                    <div class="category_img" id="vegan_img"></div>
+                                </div>
+                                <div class="catrgory_title_box">
+                                    <div class="category_title">
+                                        <h5>VEGAN</h5>
+                                        <h2>마켓갈 때.</h2>
+                                    </div>
+                                    <div class="go_click">go →</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="ad_banner_row">
-                <div class="ad_banner" id="ad_3"></div>
-                <div class="ad_banner" id="ad_4"></div>
+            <div class="ad_banner_wrap fadein_up">
+                <div class="ad_banner_row">
+                    <div class="ad_banner" id="ad_1"></div>
+                    <div class="ad_banner" id="ad_2"></div>
+                </div>
+                <div class="ad_banner_row">
+                    <div class="ad_banner" id="ad_3"></div>
+                    <div class="ad_banner" id="ad_4"></div>
+                </div>
             </div>
-        </div>
-        
-    </main>
-    <footer></footer>
-</div>
+            <div class="contents_area">
+                <div class="best_item_wrap fadein_up">
+                    <div class="bitem_title_box">
+                        <div class="bitem_bigtitle">#OFFLINE BEST</div>
+                        <div class="bitem_smtitile">제로띵스 오프라인<br>매장 인기상품</div>
+                    </div>
+                    <div class="bitem_slide_sec">
+                        <div class="bitem_slide_box">
+                            <div class="swiper mySwiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">Slide 1</div>
+                                    <div class="swiper-slide">Slide 2</div>
+                                    <div class="swiper-slide">Slide 3</div>
+                                    <div class="swiper-slide">Slide 4</div>
+                                    <div class="swiper-slide">Slide 5</div>
+                                    <div class="swiper-slide">Slide 6</div>
+                                    <div class="swiper-slide">Slide 7</div>
+                                    <div class="swiper-slide">Slide 8</div>
+                                    <div class="swiper-slide">Slide 9</div>
+                                </div>
+                                <div class="swiper-button-next btn_color"></div>
+                                <div class="swiper-button-prev btn_color"></div>
+                                <div class="swiper-pagination btn_color"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="insta_wrap fadein_up">
+                <div class="contents_area">
+                    <div class="insta_title">INSTAGRAM</div>
+                    <div class="insta_ment">초록색 소비공간, 제로띵스의 소식을 받아보실 수 있습니다.</div>
+                    <div class="insta_link">
+                        <a href="https://www.instagram.com/zerothings_shop/">@zerothings_shop</a>
+                    </div>
+                    <div class="insta_img_sec">
+                        <div class="insta_img"><img src="./img/insta1.jpg" alt=""></div>
+                        <div class="insta_img"><img src="./img/insta2.jpg" alt=""></div>
+                        <div class="insta_img"><img src="./img/insta3.jpg" alt=""></div>
+                        <div class="insta_img"><img src="./img/insta4.jpg" alt=""></div>
+                        <div class="insta_img"><img src="./img/insta5.jpg" alt=""></div>
+                        <div class="insta_img"><img src="./img/insta6.jpg" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            
+        </footer>
+    </div>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            slidesPerGroup: 3,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            autoplay: {
+                delay: 1500,
+                pauseOnMouseEnter: true,
+            },
+            speed: 1500,
+        });
+    </script>
+
 </body>
+
 </html>

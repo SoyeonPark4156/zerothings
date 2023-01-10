@@ -149,12 +149,11 @@ auto_slide();
 $(document).ready(function(){
     $(window).scroll(function(){
         $('.fadein_up').each(function(i){
-            let top_of_this = $(this).offset().top + $(this).outerHeight();
+            let top_of_this = $(this).offset().top;
             let bottom_of_window = $(window).scrollTop() + $(window).height();
-            if( bottom_of_window > top_of_this/2 ){
-                $(this).animate({'opacity':'1','margin-top':'0'},500);
-            }
-            
+            if( bottom_of_window > top_of_this ){
+                $(this).animate({'opacity':'1','margin-top':'50px'},500);
+            } 
         })
     })
 })
