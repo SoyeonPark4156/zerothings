@@ -1,0 +1,67 @@
+.about_banner_sec{
+    width: 100%;
+    height: 400px;
+    background-color: #eae7b1;
+}
+.about_banner{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    color:#253d35;
+ }
+ .ad_ment{
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 50px;
+    font-family: 'NanumSquareNeo-Variable';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+ }
+ .earth_icon{
+    position: absolute;
+    top: -5%;
+    right: 5%;
+    width: 20vw;
+    height: 100%;
+    background: url(../img/환경icon_color.png)no-repeat center / contain;
+ }
+.scroll_array{
+    position: absolute;
+    bottom: 5%;
+    right: 2%;
+    font-size: 19px;
+    font-weight: 600;
+}
+.down_arrow{
+    display: inline;
+    margin-left:5px;
+    position: absolute;
+    animation: scroll_arrow 0.8s infinite;
+}
+@keyframes scroll_arrow{
+    0%{top:-5px;}
+    50%{top: 10px;}
+    100%{top: -5px;}
+}
+.bg_img_sec{
+    width: 100%;
+    height: 500px;
+    background-color: inherit;
+}
+.bg_img{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/ad_pic_1.jpg)no-repeat center / cover;
+    transform: translateZ(0); /* fixed된 요소의 잔상 이슈 해결 */
+    z-index: -9;
+}
+.shop_info_sec{
+    width: 100%;
+    height: 500px;
+    background-color: #fff;
+}

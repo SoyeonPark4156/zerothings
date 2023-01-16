@@ -58,11 +58,6 @@
  .indi_active{
     background-color: #fff;
  }
- /*fadeInUp 효과*/
- .fadein_up{
-    opacity: 0;
-    margin-top: 300px;
- }
  /* 카테고리 섹션 나누기- 초록색 배경 */
  .category_banner_sec{
     width: 100%;
