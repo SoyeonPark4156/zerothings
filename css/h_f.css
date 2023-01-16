@@ -1,8 +1,3 @@
-.container { 
-    width: 1100px;
-    margin: 0 auto;
- } 
-
 /* 탑배너 */
 .top_banner {
     width: 100%;
@@ -11,7 +6,7 @@
     background-color: #97B38B;
     color:#fff;
     text-align: center;
-    font-size: 1em;
+    font-size: 15px;
     font-weight: 300;
     overflow: hidden;
     position: fixed;
@@ -31,7 +26,7 @@
     right: 0;
     top: 0;
     height: 100%;
-    font-size: 1em;
+    font-size: 20px;
     border: none;
     background: none;
     color: #fff;
@@ -96,12 +91,20 @@
 }
 
 /*헤더*/
+
 .header{
     padding-top: 40px;
     width: 100%;
     display: flex;
     border-bottom: 1px solid #97B38B;
-    padding-bottom: 20px;
+    background-color: #fff;
+}
+.header_event{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999999;
+    padding-top: 0;
 }
 .header_left{
     width: 10%;
@@ -115,7 +118,11 @@
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    padding: 40px 0;
+    padding: 30px;
+}
+.header_logo_size{
+    width: 28vw;
+    padding: 30px;
 }
 .header_logo img{
     width: 100%;
@@ -128,12 +135,12 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
     color: #737373;
 }
 .menu_li{
-    padding: 10px 2.5vw;
+    padding: 0 2.5vw 15px 2vw;
     position: relative;
 }
 .menu_li:hover {
@@ -217,6 +224,36 @@
 .drop_menu_li a:hover{
     color: #737373;
 }
+/*footer*/
+.footer{
+    border-top: 1px solid #ddd;
+    width: 100%;
+    height: 200px;
+    background-color: #fff;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+}
+.footer_logo a img{
+    width: 160px;
+    padding: 10px;
+}
+.footer_infos{
+    font-size: 14px;
+}
+.footer_icons{
+    display: flex;
+    gap: 20px;
+}
+.f_icon{
+    width: 40px;
+    height: 40px;
+}
+.insta_icon{background: url(../img/insta.png)no-repeat center / contain;}
+.blog_icon{background: url(../img/blog.png)no-repeat center / contain;}
+
 /* 반응형 */
 @media screen and (max-width : 960px){
     .side_ham_box{display: block;}

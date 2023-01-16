@@ -36,7 +36,39 @@ $(document).ready(function(){
         $('.side_menu_box').css({
             left:0
         })
-    })
+    });
 
-  
- });   
+    //헤더 사이즈 바꾸고 따라다니게 스크롤이벤트
+    let header_height = $('.header').height();
+    let main_o_top = $('.main').offset().top;
+    $(window).scroll(function(){
+        let header_bot = $(window).scrollTop();
+
+        if(header_bot >= main_o_top){
+            $('.tb_delete').trigger('click')
+            $('.header').addClass('header_event');
+            $("#wrap").css({
+                paddingTop: header_height
+            })
+            $('.header_logo').css({
+                width : '10vw',
+                padding: '10px'
+            })
+
+        }
+        else if(main_o_top >= header_bot){
+            $('.header').removeClass('header_event')
+            $("#wrap").css({
+                paddingTop: 0
+            })
+            $('.header_logo').css({
+                width : '28vw',
+                padding : '30px'
+            })
+        };
+
+    });
+
+ });      
+ 
+   

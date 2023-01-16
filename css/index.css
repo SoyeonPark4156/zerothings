@@ -29,7 +29,7 @@
     height: 30px;
     position: absolute;
     top: 50%;
-    z-index: 999999;
+    z-index: 99;
 }
 #prev_btn{
     background: url(../img/prev_icon.png) no-repeat center / contain;
@@ -44,17 +44,16 @@
     bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
- 
     display: flex;
     gap: 10px;
-    z-index: 999999;
+    z-index: 99;
  }
  .mb_indi_dot{
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    border: 3px solid #fff;
-    z-index: 9999;
+    border: 1px solid #fff;
+    z-index: 99;
  }
  .indi_active{
     background-color: #fff;
@@ -268,13 +267,13 @@
     font-family: 'GmarketSansMedium';
  }
  .insta_title{
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 900;
     color: #97B38B;
     padding: 40px 0 20px 0;
  }
  .insta_ment{
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 300;
     color: #737373;
     padding: 20px 0;

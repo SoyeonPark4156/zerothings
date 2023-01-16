@@ -14,7 +14,7 @@
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="./js/h_f.js"></script>
     <script defer src="./js/index.js"></script>
-
+    <script defer src="./js/common.js"></script>
 </head>
 
 <body>
@@ -43,7 +43,6 @@
                             <li class="side_menu_li"><a href="">ABOUT</a></li>
                             <li class="side_menu_li">
                                 <a href="">SHOP</a>
-
                             </li>
                             <li class="side_menu_li"><a href="">느린도서관</a></li>
                             <li class="side_menu_li"><a href="">Q&A</a></li>
@@ -60,14 +59,14 @@
                     <ul class="menu_ul">
                         <li class="menu_li"><a href="">ABOUT</a></li>
                         <li class="menu_li" id="shop_menu">
-                            <a href="">SHOP</a>
+                            <a href="product.html">SHOP</a>
                             <ul class="drop_menu_ul">
-                                <li class="drop_menu_li"><a href="">전체</a></li>
-                                <li class="drop_menu_li"><a href="">선물 세트</a></li>
-                                <li class="drop_menu_li"><a href="">리빙 제품</a></li>
-                                <li class="drop_menu_li"><a href="">주방 제품</a></li>
-                                <li class="drop_menu_li"><a href="">욕실 제품</a></li>
-                                <li class="drop_menu_li"><a href="">비건</a></li>
+                                <li class="drop_menu_li"><a href="product.html">전체</a></li>
+                                <li class="drop_menu_li"><a href="product.html?cate=0">선물 세트</a></li>
+                                <li class="drop_menu_li"><a href="product.html?cate=1">리빙 제품</a></li>
+                                <li class="drop_menu_li"><a href="product.html?cate=2">욕실 제품</a></li>
+                                <li class="drop_menu_li"><a href="product.html?cate=3">주방 제품</a></li>
+                                <li class="drop_menu_li"><a href="product.html?cate=4">비건</a></li>
                             </ul>
                         </li>
                         <li class="menu_li"><a href="">느린도서관</a></li>
@@ -87,7 +86,10 @@
             </div>
         </header>
         <!-- main -->
-        <main>
+        <main class="main">
+            <!-- 상단이동 아이콘 삽입 -->
+            <img src="./img/위쪽 화살표.png" alt="" class="btn_gotop">
+            <img src="./img/아래쪽 화살표.png" alt="" class="btn_gobottom">
             <!-- 메인슬라이드 -->
             <div class="main_banner_outer">
                 <div class="main_banner"><a href="">
@@ -124,7 +126,7 @@
                 <div class="contents_area">
                     <div class="category_gallery fadein_up">
                         <div class="category_box">
-                            <a href="">
+                            <a href="product.html">
                                 <div class="category_img_box">
                                     <div class="category_img" id="all_pro_img"></div>
                                 </div>
@@ -138,7 +140,7 @@
                             </a>
                         </div>
                         <div class="category_box">
-                            <a href="">
+                            <a href="product.html?cate=0">
                                 <div class="category_img_box">
                                     <div class="category_img" id="gift_img"></div>
                                 </div>
@@ -152,7 +154,7 @@
                             </a>
                         </div>
                         <div class="category_box">
-                            <a href="">
+                            <a href="product.html?cate=1">
                                 <div class="category_img_box">
                                     <div class="category_img" id="living_img"></div>
                                 </div>
@@ -166,7 +168,7 @@
                             </a>
                         </div>
                         <div class="category_box">
-                            <a href="">
+                            <a href="product.html?cate=2">
                                 <div class="category_img_box">
                                     <div class="category_img" id="bath_img"></div>
                                 </div>
@@ -180,7 +182,7 @@
                             </a>
                         </div>
                         <div class="category_box">
-                            <a href="">
+                            <a href="product.html?cate=3">
                                 <div class="category_img_box">
                                     <div class="category_img" id="kitchen_img"></div>
                                 </div>
@@ -194,7 +196,7 @@
                             </a>
                         </div>
                         <div class="category_box">
-                            <a href="">
+                            <a href="product.html?cate=4">
                                 <div class="category_img_box">
                                     <div class="category_img" id="vegan_img"></div>
                                 </div>
@@ -230,15 +232,15 @@
                         <div class="bitem_slide_box">
                             <div class="swiper mySwiper">
                                 <div class="swiper-wrapper">
-                                    <div class="swiper-slide">Slide 1</div>
-                                    <div class="swiper-slide">Slide 2</div>
-                                    <div class="swiper-slide">Slide 3</div>
-                                    <div class="swiper-slide">Slide 4</div>
-                                    <div class="swiper-slide">Slide 5</div>
-                                    <div class="swiper-slide">Slide 6</div>
-                                    <div class="swiper-slide">Slide 7</div>
-                                    <div class="swiper-slide">Slide 8</div>
-                                    <div class="swiper-slide">Slide 9</div>
+                                    <div class="swiper-slide"><a href="deal.html?cate=0&item=1"><img src="./img/items/giftset/main/1.jpg" alt=""></a></div>
+                                    <div class="swiper-slide"><a href="deal.html?cate=2&item=2"><img src="./img/items/bath/main/2.jpg" alt=""></a></div>
+                                    <div class="swiper-slide"><a href="deal.html?cate=1&item=1"><img src="./img/items/living/main/1.jpg" alt=""></a></div>
+                                    <div class="swiper-slide"><a href="deal.html?cate=3&item=6"><img src="./img/items/kitchen/main/6.jpg" alt=""></a></div>
+                                    <div class="swiper-slide"><a href="deal.html?cate=4&item=1"><img src="./img/items/vegan/main/1.jpg" alt=""></a></div>
+                                    <div class="swiper-slide"><a href="deal.html?cate=0&item=2"><img src="./img/items/giftset/main/2.jpg" alt=""></a></div>
+                                    <div class="swiper-slide"><a href="deal.html?cate=1&item=2"><img src="./img/items/living/main/2.jpg" alt=""></a></div>
+                                    <div class="swiper-slide"><a href="deal.html?cate=3&item=2"><img src="./img/items/kitchen/main/2.jpg" alt=""></a></div>
+                                    <div class="swiper-slide"><a href="deal.html?cate=2&item=3"><img src="./img/items/bath/main/3.jpg" alt=""></a></div>
                                 </div>
                                 <div class="swiper-button-next btn_color"></div>
                                 <div class="swiper-button-prev btn_color"></div>
@@ -267,6 +269,17 @@
             </div>
         </main>
         <footer class="footer">
+            <div class="footer_logo">
+                <a href="#"><img src="./img/메인로고.png" alt=""></a>
+            </div>
+            <div class="footer_infos">
+                <p>상호: 제로띵스 | 대표: 이윤주 | 개인정보관리책임자: 이윤주 | 전화: 02-2263-6148 | 이메일: zerothings_shop@naver.com</p>
+                <p>주소: 서울 중구 수표로 32-1, 3층 제로띵스 | 사업자등록번호: 126-55-00563 | 통신판매: 제 2021-서울중구-1313 호 | 호스팅제공자: (주)식스샵</p>
+            </div>
+            <div class="footer_icons">
+                <a href="https://www.instagram.com/zerothings_shop/"><div class="f_icon insta_icon"></div></a>
+                <a href="https://blog.naver.com/zerothings_shop"><div class="f_icon blog_icon"></div></a>
+            </div>
             
         </footer>
     </div>
