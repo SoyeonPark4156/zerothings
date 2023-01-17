@@ -3,7 +3,15 @@ $(document).ready(function(){
     let item_no = get_url_info("item"); 
     load_data(cate_no, item_no);
     total()
-    //옵션이 있을 경우에 중복체크하면 옵션박스 생성해줄 함수
+
+
+
+    // $("select[name='item_option']").click(function(){
+        
+    //     console.log($("select[name='item_option'] option:selected").val())
+
+    // });
+    //옵션이 있을 경우에 중복체크하면 선택한옵션박스 생성해줄 함수
     $("select[name='item_option']").change(function(){
        
         let tmp_value = $(this).val();
