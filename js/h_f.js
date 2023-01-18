@@ -26,16 +26,77 @@ $(document).ready(function(){
     //탑배너 "X" 버튼 클릭하면 사라지게
     $(document).on('click','.tb_delete',function(){
         $(".top_banner").remove();
-    })
+    });
 
     //반응형 햄버거 버튼
+    let ham_chk = true;
     $(document).on('click','.side_ham_box',function(){
-        $(".side_menu_wrap").css({
-            display:"block"
-        })
-        $('.side_menu_box').css({
-            left:0
-        })
+        $(".side_menu_box").toggleClass('side_menu_show')
+        $('.side_menu_bg').toggleClass('side_bg_show')
+        
+        if(ham_chk){
+            ham_chk = false;
+            $('.side_menu_wrap').css({
+                zIndex: '9999'
+            });
+            $('.side_ham_line:nth-child(1)').css({
+                transform: 'translateY(9px)'
+            });
+            setTimeout(() => {
+                $('.side_ham_line:nth-child(1)').css({
+                    transform: 'translateY(9px) rotate(45deg)',
+                    background: '#fff'
+                })
+            }, 300);
+
+            setTimeout(() => {
+                $('.side_ham_line:nth-child(2)').css({ opacity: '0' })
+            }, 300);
+
+            $('.side_ham_line:nth-child(3)').css({
+                transform: 'translateY(-9px)',
+                transition: 'all 0.3s'
+            });
+            setTimeout(() => {
+                $('.side_ham_line:nth-child(3)').css({
+                    transform: 'translateY(-9px) rotate(-45deg)',
+                    background: '#fff'
+                })
+            }, 300);
+        }
+        else{
+            ham_chk = true;
+            setTimeout(() => {
+                $('.side_menu_wrap').css({
+                    zIndex: '0'
+                })
+            }, 500);
+            
+            $('.side_ham_line:nth-child(1)').css({
+                transform: 'translateY(8px) rotate(0)'
+            });
+            setTimeout(() => {
+                $('.side_ham_line:nth-child(1)').css({
+                    transform: 'translateY(0px) rotate(0)',
+                    background: '#737373'
+                })
+            }, 300);
+
+            setTimeout(() => {
+                $('.side_ham_line:nth-child(2)').css({ opacity: '1' })
+            }, 300);
+
+            $('.side_ham_line:nth-child(3)').css({
+                transform: 'translateY(-8px) rotate(0)',
+                transition: 'all 0.3s'
+            });
+            setTimeout(() => {
+                $('.side_ham_line:nth-child(3)').css({
+                    transform: 'translateY(0) rotate(0)',
+                    background: '#737373'
+                })
+            }, 300);
+        }
     });
 
     //헤더 사이즈 바꾸고 따라다니게 스크롤이벤트
