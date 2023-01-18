@@ -144,6 +144,34 @@ function auto_slide(){
 
 auto_slide();
 
+//광고사진배너 스크롤 이벤트 fadeIn
+$(document).ready(function(){
+    $(window).scroll(function(){
+        let window_bottom = $(window).scrollTop() + $(window).height();
+        let ab_top = $('.ad_banner_wrap').offset().top;
+        if(window_bottom >= ab_top){
+            $('.ad_banner').eq(0).animate({
+                left : 0,
+                opacity : 1
+            },1000)
+            $('.ad_banner').eq(1).delay(400).animate({
+                right : 0,
+                opacity : 1
+            },1000)
+            $('.ad_banner').eq(2).delay(800).animate({
+                left : 0,
+                opacity : 1
+            },1000)
+            $('.ad_banner').eq(3).delay(1200).animate({
+                right : 0,
+                opacity : 1
+            },1000)
+            
+        }
+    });
+
+});
+
 
 
 

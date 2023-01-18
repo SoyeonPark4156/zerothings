@@ -4,18 +4,28 @@ $(document).ready(function(){
     load_data(cate_no, item_no);
     total()
 
+    //옵션박스클릭시 옵션 보이게
+    $(document).on('click','.show_opt_btn',function(){
+        $('.option_list').toggleClass('option_show')
+        $(this).toggleClass('btn_rotate');
+        if($('.option_list').hasClass('option_show')){
+            $('.select_option').css({
+                borderBottom : 'none'
+            })
+        }
+        else{
+            $('.select_option').css({
+                borderBottom : '1px solid #97B38B'
+            })
+        }
+    });
+    //옵션선택시 옵션들 중복체크하고 선택한 옵션 보이게
+    $(document).on('click','.option',function(){
+        $('.show_opt_btn').trigger('click');
 
-
-    // $("select[name='item_option']").click(function(){
-        
-    //     console.log($("select[name='item_option'] option:selected").val())
-
-    // });
-    //옵션이 있을 경우에 중복체크하면 선택한옵션박스 생성해줄 함수
-    $("select[name='item_option']").change(function(){
-       
-        let tmp_value = $(this).val();
-        let list_count = $('.option_selected_sec').children().length;
+        let tmp_value = $(this).text();
+        let list_count = $('.option_list').children().length;
+        $('.select_option span').text(tmp_value);
 
         if(list_count > 0){ //이미 있을때-true, 없으면-false
             
@@ -37,8 +47,8 @@ $(document).ready(function(){
               make_opt_list(tmp_value);  
             }
             
-        total()
-    });
+        total();
+    })
 
     //옵션박스 지우는 리무브 함수
     $(document).on('click','.opt_del_btn',function(){
@@ -55,43 +65,15 @@ $(document).ready(function(){
     //구매하기,장바구니 메세지 띄우는거
     $(document).on('click','.buy_btn',function(){
         alert("구매가 완료되었습니다.")
+        location.reload();
     });
     $(document).on('click','.shopbag_btn',function(){
         alert("상품이 장바구니에 담겼습니다.")
+        location.reload();
     });
 
-
-    
 });
 
-    // function dupl_chk(el){
-    //     alert(".")
-            
-    //         let tmp_value = $(el).val();
-    //         let list_count = $('.option_selected_sec').children().length;
-    
-    //         if(list_count > 0){ //이미 있을때-true, 없으면-false
-    //            let chk = false; //중복체크
-    
-    //             for(let i = 0; i < list_count; i++ ){
-    //                 chk = $('.opt_name').eq(i).text() == tmp_value;
-    //                 console.log(chk)
-    //                 if(chk) break;
-    //             }
-    //             if(chk){
-    //                 alert("이미 선택한 옵션입니다.");
-    //             }
-    //             else{
-    //                 make_opt_list(tmp_value);  
-    //             }
-    //         }
-    //         else{
-    //               make_opt_list(tmp_value);  
-    //             }
-    
-        
-    //     };
-    
 
 //옵션 리스트 만들어줄 함수
 function make_opt_list(tmp_value){
@@ -137,17 +119,23 @@ function load_data(cate, item){
         let opt = rs.opt.split(',');
         
         let list = `<div class="item_option_sec">
-                    <div class="detail_title">선택사항</div>
-                        <select name="item_option" id="item_option" class = "select_opt">
-                            <option value="" selected disabled> 선택하세요.</option>
-                        </select>
+                        <div class="detail_title">선택사항</div>
+                        <div class="item_option">
+                            <div class="select_option">
+                            <span>선택하세요.</span>
+                            <div class="show_opt_btn"></div>
+                            </div>
+                            <div class="option_list">
+                                <div class="option" style ="pointer-events:none;">선택하세요.</div>
+                            </div>
+                        </div>
                     </div>`
 
         $('.item_select_sec').append(list); 
         
         for(let i = 0; i <opt.length; i++){
-            let opt_list = `<option value="${opt[i]}" class="selected_opt">${opt[i]}</option>`
-            $('.select_opt').append(opt_list);       
+            let opt_list = `<div class="option">${opt[i]}</div>`
+            $('.option_list').append(opt_list);       
         }
 
         qty_box.style.display = "none";

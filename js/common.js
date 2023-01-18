@@ -62,7 +62,7 @@ $(document).ready(function(){
 
     //상단으로 이동시켜주는 버튼 이미지 폴더에 아이콘 있음
     $(window).scroll(function(){
-        if ($(this).scrollTop() > 600){
+        if ($(this).scrollTop() > 500){
             $('.btn_gotop').css({
                 display : 'block'
             });
@@ -96,7 +96,7 @@ $(document).ready(function(){
             let top_of_this = $(this).offset().top;
             let bottom_of_window = $(window).scrollTop() + $(window).height();
             if( bottom_of_window > top_of_this ){
-                $(this).animate({'opacity':'1','margin-top':'50px'},500);
+                $(this).animate({'opacity':'1','margin-top':'50px'},800);
             } 
         })
     })

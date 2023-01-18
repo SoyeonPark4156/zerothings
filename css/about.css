@@ -62,36 +62,40 @@
 }
 .shop_info_sec{
     width: 100%;
-    height: 550px;
+    height: 100%;
     background-color: #fff;
     overflow: hidden;
-    padding: 50px 0;
+    padding: 100px 0;
 }
 .shop_info_box{
-    position: relative;   
+    position: relative; 
+    width: 100%; 
+    height: 600px; 
 }
 .info_img_box{
+    max-width: 450px;
+    width: 100%;
+    height: 600px;
     position: absolute;
     top: 0;
     left: -50%;
     opacity: 0;
-    max-width: 450px;
-    width: 100%;
 }
 .info_img_box img{
     width: 100%;
+    height: 100%;
 }
 .info_ment_box{
     position: absolute;
     top: 0;
     right: -50%;
     opacity: 0;
-    width: 52%;
+    width: 50%;
     text-align: center;
-    padding: 0 20px;
 }
 .info_title{
     font-size: 30px;
+    font-weight: 900;
     color: #97B38B;
     padding: 20px 0;
 }
@@ -123,4 +127,83 @@
     top: 50%;
     left: 50%;
     transform: translateX(-50%);
+}
+.shop_slogan_sec{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    overflow: hidden;
+}
+.shop_slogan_wrap{
+    width: 100%;
+    display: flex;
+    gap: 50px;
+    padding: 100px 0;
+}
+.slogan_box{
+    width: calc((100% - (50px * 2))/3);
+    position: relative;
+    top: 50%;
+    opacity: 0;
+}
+.slogan_img_box{
+    width: 100%;
+    height: 60%;
+}
+.slogan_img_box img{
+    width: 100%;
+    height: 100%;
+}
+.slogan_txt_box{
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.slogan_title{
+    font-size: 25px;
+    font-weight: 700;
+    color: #97B38B;
+    padding: 20px 0;
+}
+.slogan_ment{
+    font-size: 18px;
+    font-weight: 300;
+}
+.location_wrap{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    overflow: hidden;
+    text-align: center;
+}
+.location_sec{
+    width: 100%;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+.location_sec iframe{
+    width: 100%;
+    height: 500px;
+    border-style: none;
+    padding-bottom: 100px;
+}
+.line{
+    width: 5%;
+    height: 1px;
+    background-color: #97B38B;
+    margin: 50px 0;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.location_title{
+    font-size: 30px;
+    font-weight: 900;
+    color: #97B38B;
+    text-decoration: underline;
+    padding: 30px 0;
+}
+.location{
+    color: #737373;
+    padding-bottom: 50px;
 }

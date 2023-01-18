@@ -46,7 +46,9 @@ $(document).ready(function(){
 
         if(header_bot >= main_o_top){
             $('.tb_delete').trigger('click')
-            $('.header').addClass('header_event');
+            $('.header').addClass('header_event').animate({
+                opacity:'1'
+            },500);
             $("#wrap").css({
                 paddingTop: header_height
             })
@@ -54,10 +56,15 @@ $(document).ready(function(){
                 width : '10vw',
                 padding: '10px'
             })
+            // $('.header').animate({
+            //     opacity:'1'
+            // },500)
 
         }
-        else if(main_o_top >= header_bot){
-            $('.header').removeClass('header_event')
+        else{
+            $('.header').removeClass('header_event').animate({
+                opacity:'1'
+            },500);
             $("#wrap").css({
                 paddingTop: 0
             })

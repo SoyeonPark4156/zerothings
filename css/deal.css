@@ -33,21 +33,59 @@
 }
 .detail_title{
     color: #737373;
+    padding: 10px 0;
 }
-.select_opt{
+.item_option{
+    position: relative;
+    line-height: 40px;
+    font-size: 14px;
+}
+.select_option{
     border-style: none;
     width: 150px;
     height: 40px;
     border: 1px solid #97B38B;
     font-weight: 300;
-    outline: none;
+    padding-left: 10px;
+    box-sizing: border-box;
 }
-.select_opt option{
-    border-style: none;
+.show_opt_btn{
+    width: 10px;
+    height: 100%;
+    float: right;
+    background: url(../img/옵션다운_화살표.png) no-repeat center / contain;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.btn_rotate{
+    transform: rotateX(180deg);
+}
+.option_list{
+    width: 250px;
+    background: #fff;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    box-shadow: rgba(55, 55, 55, 0.3);
+    border: 1px solid #97B38B;
+    display: none;
+}
+.option{
+    width: 100%;
+    height: 40px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.option:hover{
+    background-color: #73737320;
+}
+.option_show{
+    display: block;
 }
 .item_option_sec{
     width: 100%;
-    height: 70px;
+    /* height: 70px; */
 }
 .item_qty_sec{
     width: 100%;
@@ -95,9 +133,18 @@
 .select_qty_sec{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+.total_qty{
+    font-size: 18px;
+    font-weight: 500;
 }
 .opt_price{
     line-height: 40px;
+}
+.total_price{
+    font-size: 18px;
+    font-weight: 500;
 }
 .buybutton_wrap{
     width: 100%;
@@ -149,11 +196,17 @@
     transform: translateX(50%);
 }
 .tabs{
-    max-width: 120px;
+    width: 80px;
     color: #222222;
     font-size: 15px;
-    padding: 15px 0;
+    padding: 10px 0;
     cursor: pointer;
+}
+.tabs_event{
+    background-color: #fff;
+    border: 1px solid #000;
+    border-bottom: 1px solid #fff;
+    transform: translateY(1px);
 }
 .info_wrap{
     padding-top: 150px;
@@ -166,7 +219,7 @@
 }
 /* 리뷰 */
 .review_wrap{
-    padding-top: 150px;
+    padding: 100px 0;
 }
 .rv_title{
     font-size: 20px;
