@@ -13,7 +13,6 @@
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="./js/ITEM_LIST.js"></script>
     <script src="./js/h_f.js"></script>
-    <script defer src="./js/index.js"></script>
     <script defer src="./js/common.js"></script>
     <script defer src="./js/product.js"></script>
 
@@ -21,24 +20,29 @@
 
 <body>
     <div id="wrap">
-        <!-- 헤더 -->
-        <header class="header">
-            <div class="header_left">
-                <div class="side_ham_box">
-                    <div class="side_ham_line"></div>
-                    <div class="side_ham_line"></div>
-                    <div class="side_ham_line"></div>
-                </div>
+                <!-- 사이드메뉴 박스 바탕 -->
                 <div class="side_menu_wrap">
-                    <div class="side_menu_box">
+                    <div class="side_menu_bg"></div>
+                </div>
+                    <!-- 사이드메뉴 박스 -->
+                <div class="side_menu_box">
+                    <div class="side_menu">
                         <div class="side_menu_top">
-                            <a href="index.html"><img src="./img/메인로고.png" alt="logo"></a>
+                            <a href=""><img src="./img/메인로고.png" alt="logo"></a>
                             <div class="h_icon join_icon"><a href=""></a></div>
                         </div>
                         <ul class="side_menu_ul">
                             <li class="side_menu_li"><a href="about.html">ABOUT</a></li>
                             <li class="side_menu_li">
-                                <a href="">SHOP</a>
+                                <div class="shop_menu">SHOP<div class="show_li_btn"></div></div> 
+                                <ul class="sub_ul">
+                                    <li class="sub_li"><a href="product.html">전체보기</a></li>
+                                    <li class="sub_li"><a href="product.html?cate=0">선물 세트</a></li>
+                                    <li class="sub_li"><a href="product.html?cate=1">리빙 제품</a></li>
+                                    <li class="sub_li"><a href="product.html?cate=2">욕실 제품</a></li>
+                                    <li class="sub_li"><a href="product.html?cate=3">주방 제품</a></li>
+                                    <li class="sub_li"><a href="product.html?cate=4">비건</a></li>
+                                </ul>
                             </li>
                             <li class="side_menu_li"><a href="">느린도서관</a></li>
                             <li class="side_menu_li"><a href="">Q&A</a></li>
@@ -46,9 +50,15 @@
                             <li class="side_menu_li"><a href="">B2B</a></li>
                         </ul>
                     </div>
-                    <button class="side_menu_close"></button>
+                    <div class="side_ham_box">
+                        <div class="side_ham_line"></div>
+                        <div class="side_ham_line"></div>
+                        <div class="side_ham_line"></div>
+                    </div>
                 </div>
-            </div>
+        <!-- 헤더 -->
+        <header class="header">
+            <div class="header_left"></div>
             <div class="header_center">
                 <div class="header_logo"><a href="index.html"><img src="./img/메인로고.png" alt="logo"></a></div>
                 <div class="header_menu">

@@ -16,20 +16,21 @@ $(document).ready(function(){
             },1500)
         }
 
-        let slogan_sec_top = $('.shop_slogan_sec').offset().top + ($('.shop_slogan_sec').height() / 2);
+        // let slogan_sec_top = $('.shop_slogan_sec').offset().top + ($('.shop_slogan_sec').height() / 2);
+        let slogan_sec_top = $('.shop_slogan_sec').offset().top;
         if(bottom_of_window >= slogan_sec_top){
             $('.slogan_box').eq(0).animate({
                 top: 0,
                 opacity : '1'
-            },1000)
+            },500)
             $('.slogan_box').eq(1).delay(500).animate({
                 top: 0,
                 opacity : '1'
-            },1000)
+            },500)
             $('.slogan_box').eq(2).delay(1000).animate({
                 top: 0,
                 opacity : '1'
-            },1000)
+            },500)
 
         }
         

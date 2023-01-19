@@ -26,37 +26,45 @@
     </div>
     
     <div id="wrap">
+        <!-- 사이드메뉴 박스 바탕 -->
         <div class="side_menu_wrap">
             <div class="side_menu_bg"></div>
-            <div class="side_menu_box">
-                <div class="side_menu">
-                    <div class="side_menu_top">
-                        <a href=""><img src="./img/메인로고.png" alt="logo"></a>
-                        <div class="h_icon join_icon"><a href=""></a></div>
-                    </div>
-                    <ul class="side_menu_ul">
-                        <li class="side_menu_li"><a href="about.html">ABOUT</a></li>
-                        <li class="side_menu_li">
-                            <a href="product.html">SHOP</a>
-                        </li>
-                        <li class="side_menu_li"><a href="">느린도서관</a></li>
-                        <li class="side_menu_li"><a href="">Q&A</a></li>
-                        <li class="side_menu_li"><a href="">게시판</a></li>
-                        <li class="side_menu_li"><a href="">B2B</a></li>
-                    </ul>
+        </div>
+            <!-- 사이드메뉴 박스 -->
+        <div class="side_menu_box">
+            <div class="side_menu">
+                <div class="side_menu_top">
+                    <a href=""><img src="./img/메인로고.png" alt="logo"></a>
+                    <div class="h_icon join_icon"><a href=""></a></div>
                 </div>
-                <div class="side_ham_box">
-                    <div class="side_ham_line"></div>
-                    <div class="side_ham_line"></div>
-                    <div class="side_ham_line"></div>
-                </div>
+                <ul class="side_menu_ul">
+                    <li class="side_menu_li"><a href="about.html">ABOUT</a></li>
+                    <li class="side_menu_li">
+                        <div class="shop_menu">SHOP<div class="show_li_btn"></div></div> 
+                        <ul class="sub_ul">
+                            <li class="sub_li"><a href="product.html">전체보기</a></li>
+                            <li class="sub_li"><a href="product.html?cate=0">선물 세트</a></li>
+                            <li class="sub_li"><a href="product.html?cate=1">리빙 제품</a></li>
+                            <li class="sub_li"><a href="product.html?cate=2">욕실 제품</a></li>
+                            <li class="sub_li"><a href="product.html?cate=3">주방 제품</a></li>
+                            <li class="sub_li"><a href="product.html?cate=4">비건</a></li>
+                        </ul>
+                    </li>
+                    <li class="side_menu_li"><a href="">느린도서관</a></li>
+                    <li class="side_menu_li"><a href="">Q&A</a></li>
+                    <li class="side_menu_li"><a href="">게시판</a></li>
+                    <li class="side_menu_li"><a href="">B2B</a></li>
+                </ul>
+            </div>
+            <div class="side_ham_box">
+                <div class="side_ham_line"></div>
+                <div class="side_ham_line"></div>
+                <div class="side_ham_line"></div>
             </div>
         </div>
         <!-- 헤더 -->
         <header class="header">
-            <div class="header_left">
-                
-            </div>
+            <div class="header_left"></div>
             <div class="header_center">
                 <div class="header_logo"><a href="#"><img src="./img/메인로고.png" alt="logo"></a></div>
                 <div class="header_menu">
@@ -136,8 +144,8 @@
                                 </div>
                                 <div class="catrgory_title_box">
                                     <div class="category_title">
-                                        <h5>ALL PRODUCT</h5>
-                                        <h2>전체 상품.</h2>
+                                        <div class="cate_bigtitle">ALL PRODUCT</div>
+                                        <div class="cate_smtitle">전체 상품.</div>
                                     </div>
                                     <div class="go_click">go →</div>
                                 </div>
@@ -150,8 +158,8 @@
                                 </div>
                                 <div class="catrgory_title_box">
                                     <div class="category_title">
-                                        <h5>ZERO-WASTE GIFT</h5>
-                                        <h2>선물할 때.</h2>
+                                        <div class="cate_bigtitle">ZERO-WASTE GIFT</div>
+                                        <div class="cate_smtitle">선물할 때.</div>
                                     </div>
                                     <div class="go_click">go →</div>
                                 </div>
@@ -164,8 +172,8 @@
                                 </div>
                                 <div class="catrgory_title_box">
                                     <div class="category_title">
-                                        <h5>LIVING</h5>
-                                        <h2>일상에서.</h2>
+                                        <div class="cate_bigtitle">LIVING</div>
+                                        <div class="cate_smtitle">일상에서.</div>
                                     </div>
                                     <div class="go_click">go →</div>
                                 </div>
@@ -178,8 +186,8 @@
                                 </div>
                                 <div class="catrgory_title_box">
                                     <div class="category_title">
-                                        <h5>BATH</h5>
-                                        <h2>욕실에서.</h2>
+                                        <div class="cate_bigtitle">BATH</div>
+                                        <div class="cate_smtitle">욕실에서.</div>
                                     </div>
                                     <div class="go_click">go →</div>
                                 </div>
@@ -192,8 +200,8 @@
                                 </div>
                                 <div class="catrgory_title_box">
                                     <div class="category_title">
-                                        <h5>KICHEN</h5>
-                                        <h2>부엌에서.</h2>
+                                        <div class="cate_bigtitle">KITCHEN</div>
+                                        <div class="cate_smtitle">부엌에서.</div>
                                     </div>
                                     <div class="go_click">go →</div>
                                 </div>
@@ -206,8 +214,8 @@
                                 </div>
                                 <div class="catrgory_title_box">
                                     <div class="category_title">
-                                        <h5>VEGAN</h5>
-                                        <h2>마켓갈 때.</h2>
+                                        <div class="cate_bigtitle">VEGAN</div>
+                                        <div class="cate_smtitle">마켓갈 때.</div>
                                     </div>
                                     <div class="go_click">go →</div>
                                 </div>
@@ -226,121 +234,124 @@
                     <div class="ad_banner ab_short" id="ad_4"></div>
                 </div>
             </div>
-            <div class="contents_area">
-                <div class="best_item_wrap fadein_up">
-                    <div class="bitem_title_box">
-                        <div class="bitem_bigtitle">#OFFLINE BEST</div>
-                        <div class="bitem_smtitile">제로띵스 오프라인<br>매장 인기상품</div>
-                    </div>
-                    <div class="bitem_slide_sec">
-                        <div class="bitem_slide_box">
-                            <div class="swiper mySwiper">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide bitem_img_box">
-                                        <a href="deal.html?cate=0&item=1">
-                                            <img src="./img/items/giftset/main/1.jpg" alt="">
-                                            <div class="bitem_info_box">
-                                                <div class="bitem_txt">
-                                                    <p>[Gift Set] 크리스마스 제로웨이스트 키트</p>
-                                                    <span style="text-decoration: line-through;">30,700원</span>
-                                                    <span style="color: #3c6255;">28,900원</span>
+            <div class="best_item_wrap fadein_up">
+                <div class="bitem_title_box">
+                    <div class="bitem_bigtitle">#OFFLINE BEST</div>
+                    <div class="bitem_smtitile">제로띵스 오프라인<br>매장 인기상품</div>
+                </div>
+                <div class="contents_area">
+                    <div class="best_item_sec">
+                        
+                        <div class="bitem_slide_sec">
+                            <div class="bitem_slide_box">
+                                <div class="swiper mySwiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide bitem_img_box">
+                                            <a href="deal.html?cate=0&item=1">
+                                                <img src="./img/items/giftset/main/1.jpg" alt="">
+                                                <div class="bitem_info_box">
+                                                    <div class="bitem_txt">
+                                                        <p>[Gift Set] 크리스마스 제로웨이스트 키트</p>
+                                                        <span style="text-decoration: line-through;">30,700원</span>
+                                                        <span style="color: #3c6255;">28,900원</span>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                    </a>
+                                        </a>
+                                    </div>
+                                        <div class="swiper-slide bitem_img_box">
+                                            <a href="deal.html?cate=2&item=2">
+                                                <img src="./img/items/bath/main/2.jpg" alt="">
+                                                <div class="bitem_info_box">
+                                                    <div class="bitem_txt">
+                                                        <p>[아로마티카] 서렌바디바 라벤더 & 버가못 바디비누</p>
+                                                        <span>15,000원</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide bitem_img_box">
+                                            <a href="deal.html?cate=1&item=1">
+                                                <img src="./img/items/living/main/1.jpg" alt="">
+                                                <div class="bitem_info_box">
+                                                    <div class="bitem_txt">
+                                                        <p>[피팔레트] 뽀글이 텀블러 홀더백</p>
+                                                        <span>11,000원</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide bitem_img_box">
+                                            <a href="deal.html?cate=3&item=6">
+                                                <img src="./img/items/kitchen/main/6.jpg" alt="">
+                                                <div class="bitem_info_box">
+                                                    <div class="bitem_txt">
+                                                        <p>[스카이폴리오] 스토조 접이식텀블러 3종</p>
+                                                        <span>28,000원</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide bitem_img_box">
+                                            <a href="deal.html?cate=4&item=1">
+                                                <img src="./img/items/vegan/main/1.jpg" alt="">
+                                                <div class="bitem_info_box">
+                                                    <div class="bitem_txt">
+                                                        <p>[널담] 견과초코볼 (아몬드)_1봉지</p>
+                                                        <span>1,900원</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide bitem_img_box">
+                                            <a href="deal.html?cate=0&item=2">
+                                                <img src="./img/items/giftset/main/2.jpg" alt="">
+                                                <div class="bitem_info_box">
+                                                    <div class="bitem_txt">
+                                                        <p>[제로웨이스트 키트] 여행용 트래블 키트</p>
+                                                        <span style="text-decoration: line-through;">48,200원</span>
+                                                        <span style="color: #3c6255;">44,900원</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide bitem_img_box">
+                                            <a href="deal.html?cate=1&item=2">
+                                                <img src="./img/items/living/main/2.jpg" alt="">
+                                                <div class="bitem_info_box">
+                                                    <div class="bitem_txt">
+                                                        <p>[피팔레트] 업사이클 파우치</p>
+                                                        <span>9,000원</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide bitem_img_box">
+                                            <a href="deal.html?cate=3&item=2">
+                                                <img src="./img/items/kitchen/main/2.jpg" alt="">
+                                                <div class="bitem_info_box">
+                                                    <div class="bitem_txt">
+                                                        <p>[이크] eeeek 실리콘 아기 투약병 20cc _3개입</p>
+                                                        <span>15,900원</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide bitem_img_box">
+                                            <a href="deal.html?cate=2&item=3">
+                                                <img src="./img/items/bath/main/3.jpg" alt="">
+                                                <div class="bitem_info_box">
+                                                    <div class="bitem_txt">
+                                                        <p>[조르단] 그린클린 체인지 칫솔 (+ 2 Refills)</p>
+                                                        <span>6,900원</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-button-next btn_color"></div>
+                                    <div class="swiper-button-prev btn_color"></div>
+                                    <div class="swiper-pagination btn_color"></div>
                                 </div>
-                                    <div class="swiper-slide bitem_img_box">
-                                        <a href="deal.html?cate=2&item=2">
-                                            <img src="./img/items/bath/main/2.jpg" alt="">
-                                            <div class="bitem_info_box">
-                                                <div class="bitem_txt">
-                                                    <p>[아로마티카] 서렌바디바 라벤더 & 버가못 바디비누</p>
-                                                    <span>15,000원</span>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide bitem_img_box">
-                                        <a href="deal.html?cate=1&item=1">
-                                            <img src="./img/items/living/main/1.jpg" alt="">
-                                            <div class="bitem_info_box">
-                                                <div class="bitem_txt">
-                                                    <p>[피팔레트] 뽀글이 텀블러 홀더백</p>
-                                                    <span>11,000원</span>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide bitem_img_box">
-                                        <a href="deal.html?cate=3&item=6">
-                                            <img src="./img/items/kitchen/main/6.jpg" alt="">
-                                            <div class="bitem_info_box">
-                                                <div class="bitem_txt">
-                                                    <p>[스카이폴리오] 스토조 접이식텀블러 3종</p>
-                                                    <span>28,000원</span>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide bitem_img_box">
-                                        <a href="deal.html?cate=4&item=1">
-                                            <img src="./img/items/vegan/main/1.jpg" alt="">
-                                            <div class="bitem_info_box">
-                                                <div class="bitem_txt">
-                                                    <p>[널담] 견과초코볼 (아몬드)_1봉지</p>
-                                                    <span>1,900원</span>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide bitem_img_box">
-                                        <a href="deal.html?cate=0&item=2">
-                                            <img src="./img/items/giftset/main/2.jpg" alt="">
-                                            <div class="bitem_info_box">
-                                                <div class="bitem_txt">
-                                                    <p>[제로웨이스트 키트] 여행용 트래블 키트</p>
-                                                    <span style="text-decoration: line-through;">48,200원</span>
-                                                    <span style="color: #3c6255;">44,900원</span>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide bitem_img_box">
-                                        <a href="deal.html?cate=1&item=2">
-                                            <img src="./img/items/living/main/2.jpg" alt="">
-                                            <div class="bitem_info_box">
-                                                <div class="bitem_txt">
-                                                    <p>[피팔레트] 업사이클 파우치</p>
-                                                    <span>9,000원</span>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide bitem_img_box">
-                                        <a href="deal.html?cate=3&item=2">
-                                            <img src="./img/items/kitchen/main/2.jpg" alt="">
-                                            <div class="bitem_info_box">
-                                                <div class="bitem_txt">
-                                                    <p>[이크] eeeek 실리콘 아기 투약병 20cc _3개입</p>
-                                                    <span>15,900원</span>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide bitem_img_box">
-                                        <a href="deal.html?cate=2&item=3">
-                                            <img src="./img/items/bath/main/3.jpg" alt="">
-                                            <div class="bitem_info_box">
-                                                <div class="bitem_txt">
-                                                    <p>[조르단] 그린클린 체인지 칫솔 (+ 2 Refills)</p>
-                                                    <span>6,900원</span>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="swiper-button-next btn_color"></div>
-                                <div class="swiper-button-prev btn_color"></div>
-                                <div class="swiper-pagination btn_color"></div>
                             </div>
                         </div>
                     </div>
@@ -404,6 +415,24 @@
                 disableOnInteraction: false
             },
             speed: 1500,
+            breakpoints: {
+            1440: {
+                slidesPerView: 3,  //브라우저가 1024보다 클 때
+                spaceBetween: 30,
+                slidesPerGroup: 3,
+            },
+            1024: {
+                slidesPerView: 2,  //브라우저가 1024보다 클 때
+                spaceBetween: 50,
+                slidesPerGroup: 2,
+            },
+            768: {
+                slidesPerView: 2,  //브라우저가 1024보다 클 때
+                spaceBetween: 50,
+                slidesPerGroup: 2,
+            },
+
+        },
         });
     </script>
 

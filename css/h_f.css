@@ -34,10 +34,7 @@
 }
 /* 햄버거버튼 */
 .side_menu_wrap{
-    width: 100%;
-    height: 100%;
     position: fixed;
-    z-index: 99999;
     top: 0;
     left: 0;
     overflow: hidden;
@@ -56,17 +53,19 @@
     display: block;
 }
 .side_menu_box{
-    width: 100%;
+    width: 400px;
     height: calc(100% + 40px);
     z-index: 999999;
     position: fixed;
     top: -40px;
-    left: -600px;
+    /* left: -400px; */
+    left: 0;
+    transform: translateX(-100%);
     transition: all 0.5s;
-    overflow: hidden;
+    display: none;
 }
 .side_menu{
-    width: 600px;
+    width: 100%;
     height: 100%;
     background-color: rgb(255, 255, 255,1);
     position: absolute;
@@ -74,15 +73,18 @@
     left: 0;
 }
 .side_menu_show{
-    left: 0;
+    /* left: 0 !important; */
+    transform: translateX(0);
 }
 .side_ham_box{
-    width: 40px;
+    width: 30px;
     margin: 10px;
     position: absolute;
-    top: 80px;
-    left: 600px;
+    top: 40px;
+    /* left: 400px; */
+    left: 100%;
     cursor: pointer;
+    display: none;
 }
 .side_ham_line{
     width: 100%;
@@ -96,18 +98,45 @@
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #97B38B ;
-    padding: 20px;
+    padding: 10px 20px;
 }
 .side_menu_top a img{
     width: 150px;
 }
 .side_menu_li{
-    font-size: 16px;
+    font-size: 15px;
     color: #737373;
-    margin: 30px 20px;    
+    padding: 15px 20px; 
+    border-bottom: 1px solid #ddd;   
+}
+.side_menu_li:nth-child(2){
+    padding: 0;
+}
+.shop_menu{
+    padding: 15px 20px;
 }
 .side_menu_li:hover{
-    color: #000000;
+    background-color: #f1f1f1;
+}
+.show_li_btn{
+    width: 15px;
+    height: 15px;
+    background: url(../img/옵션다운_화살표.png) no-repeat center / contain;
+    float: right;
+    cursor: pointer;
+}
+.sub_ul{
+    display: none;
+}
+.sub_li{
+    font-size: 14px;
+    padding: 10px 20px;
+    border-top: 1px solid #a6bd8b;
+    background-color: #eae7b1d3;
+}
+.sub_li:hover{
+    background-color: #eae7b1;
+    color: #3c6255;
 }
 
 /*헤더*/
@@ -123,9 +152,9 @@
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 9999;
+    z-index: 999;
     padding-top: 0;
-    animation: opacy 0.5s ease;
+    animation: opacy 0.5s forwards;
 }
 @keyframes opacy{
     0%{opacity: 0;}
@@ -138,16 +167,14 @@
     width: 80%;
 }
 .header_logo{
-    cursor: pointer;
-    width: 28vw;
+    width: 25vw;
+    max-width: 300px;
+    min-width: 150px;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    padding: 30px;
-}
-.header_logo_size{
-    width: 28vw;
-    padding: 30px;
+    padding: 10px;
+    cursor: pointer;
 }
 .header_logo img{
     width: 100%;
@@ -184,6 +211,8 @@
 .h_icon{
     width: 20px;
     height: 20px;
+    cursor: pointer;
+    
 }
 .h_icon a{
     width: 100%;
@@ -259,6 +288,8 @@
     justify-content: space-around;
     align-items: center;
     gap: 30px;
+    padding: 0 15px;
+    box-sizing: border-box;
 }
 .footer_logo a img{
     width: 160px;
@@ -285,16 +316,83 @@
 } 
 
 /* 모바일 가로 & 테블릿 세로 (해상도 480px ~ 767px)*/ 
-@media screen and (max-width:767px) {
+@media screen and (max-width:768px) {
+.side_menu_box{
+    display: block;
+}
+.side_ham_box{
+    display: block;
+}
 .side_menu_wrap{
     display: block;
 }
 .top_banner{
     display: none;
 }
+.header{
+    padding-top: 0;
+    justify-content: space-between;
+}
+.header_logo{
+    width: 25vw;
+    padding: 5px;
+}
+.header_menu{
+    display: none;
+}
+.icon_list{
+    gap: 10px;
+    margin: 10px;
+}
+.icon_list .join_icon{
+    display: none;
+}
+.join_speech_bubble{
+    display: none;
+}
+.header_right{
+    align-items: center;
+}
+.footer_logo a img {
+    width: 120px;
+}
 } 
 
 /* 모바일 세로 (해상도 ~ 479px)*/ 
-@media screen and (max-width:479px) {
+@media screen  and (max-width:480px) {
+    body{min-width: 280px;}
+    .side_menu_box{
+        width: 250px;
+    }
+    .side_ham_box{
+        margin: 0;
+        padding: 5px 2px;
+        box-sizing: border-box;
+    }
+    .icon_list{
+        gap: 10px;
+        margin: 0;
+    }
+    .h_icon{
+        width: 17px;
+    }
+    .footer {
+        gap: 15px;
+    }
+    .footer_infos {
+        font-size: 12px;
+    }
+    .footer_logo{
+        display: none;
+    }
+    .footer_icons {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .f_icon {
+        width: 25px;
+        height: 25px;
+    }
 
 }

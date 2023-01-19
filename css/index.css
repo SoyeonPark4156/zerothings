@@ -66,14 +66,14 @@
     width: 100%;
     height: 500px;
     background-color: #253d35;
+    padding: 0 15px;
+    box-sizing: border-box;
  }
  .category_banner{
     width: 100%;
     height: 100%;
     position: relative;
     color:#fff;
-    padding: 0 15px;
-    box-sizing: border-box;
  }
  .ad_ment{
     font-size: 35px;
@@ -114,6 +114,8 @@
     width: 100%;
     height: 100%;
     margin: 100px 0;
+    padding: 0 15px;
+    box-sizing: border-box;
 }
 .category_gallery{
     width: 100%;
@@ -129,11 +131,13 @@
 }
 .category_img_box{
     width: 100%;
-    height: calc((1200px - (20px * 3)) / 3);
+    padding-bottom: 100%;
+    position: relative;
 }
 .category_img{
     width: 100%;
     height: 100%;
+    position: absolute;
 }
 #all_pro_img{background: url(../img/all_pro.png)no-repeat center / cover;}
 #gift_img{background: url(../img/giftset_1.jpg)no-repeat center / cover;}
@@ -146,9 +150,14 @@
     justify-content: space-between;
     font-weight: 700;
     margin: 10px 0 10px 0;
+    line-height: 35px;
 }
-.category_title{
-    line-height: 2em;
+
+.cate_bigtitle{
+    font-size: 14px;
+}
+.cate_smtitle{
+    font-size: 25px;
 }
 
 /*광고 배너?*/
@@ -193,15 +202,17 @@
 
 /*오프라인 베스트 아이템 슬라이드*/
 .best_item_wrap{
-    width: 100%;
-    height: 300px;
-    position: relative;
-    margin: 100px 0;
+  width: 100%;
+  height: 100%;
+  padding: 0 15px;
+  box-sizing: border-box;
+  overflow: hidden;
+  margin: 100px 0;
 }
 .bitem_title_box{
+    width: 300px;
     position: absolute;
-    left: 0;
-    top: 10%;
+    left: 90px;
     z-index: 99;
     font-family: 'Nanum Gothic', sans-serif;
 }
@@ -211,7 +222,7 @@
     font-weight: 900;
 }
 .bitem_smtitile{
-    width: 80%;
+    width: 100%;
     font-size: 25px;
     color:#000;
     background-color:rgba(0, 0, 0, 0.144);
@@ -219,8 +230,14 @@
     margin-top: 20px;
 }
 /*스와이퍼 css*/
+.best_item_sec{
+    width: 100%;
+    height: 370px;
+    margin: 133px 0;
+    position: relative;
+}
 .bitem_slide_sec{
-    width: 90%;
+    width: 100%;
     height: 100%; 
     position: absolute;
     right: 0;
@@ -228,7 +245,7 @@
     background-color: #eae7b1; 
 }
 .bitem_slide_box {
-    width: 80%;
+    width: 100%;
     height: 100%;
     position: absolute;
     right: 0;
@@ -238,14 +255,15 @@
     font-size: 14px;
     color: #000;
     margin: 0;
-    padding: 0;
+    padding: 0 15px;
+    box-sizing: border-box;
   }
   .swiper {
     width: 100%;
     height: 90%;
     position: absolute;
     top: 5%;
-    right: 3%;
+    left: 0;
   }
   .swiper-slide {
     text-align: center;
@@ -265,11 +283,15 @@
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center;
+    padding-bottom: 100%;
+  }
+  .swiper-slide a{
+    width: 100%;
   }
   .swiper-slide img {
     display: block;
     width: 100%;
-    height: 90%;
+    height: 100%;
     object-fit: cover;
   }
   .btn_color{
@@ -280,7 +302,7 @@
   }
   .bitem_info_box{
     width: 100%;
-    height: 100%;
+    padding-bottom: 100%;
     background-color: rgba(255, 255, 255, 0.6);
     position: absolute;
     top: 0;
@@ -336,7 +358,6 @@
  }
  .insta_img{
     width: calc((100% - (20px * 2)) / 3);
-    height: 330px;
  }
  .insta_img img{
     width: 100%;
@@ -345,15 +366,79 @@
  /* 반응형 */
 /* 테블릿 가로 (해상도 768px ~ 1023px)*/ 
 @media screen and (max-width:1023px) { 
-    
+    .ad_ment{
+        font-size: 25px;
+    }
+    .bitem_bigtitle{
+        font-size: 25px;
+    }
+    .bitem_smtitile{
+        font-size: 18px;
+    }
 } 
 
 /* 모바일 가로 & 테블릿 세로 (해상도 480px ~ 767px)*/ 
-@media screen and (max-width:767px) {
+@media screen and (max-width:768px) {
+    #mb1{background: url(../img/res_main_banner1.jpg) no-repeat center / cover;}
+    #mb2{background: url(../img/res_main_banner2.jpg) no-repeat center / cover;}
+    #mb3{background: url(../img/res_main_banner3.jpg) no-repeat center / cover;}
+    #mb4{background: url(../img/res_main_banner4.jpg) no-repeat center / cover;}
+    .category_banner_sec{
+        height: 400px;
+    }
+    .ad_ment{
+        font-size: 20px;
+    }
+    .cate_bigtitle {
+        font-size: 10px;
+    }
+    .cate_smtitle {
+        font-size: 16px;
+    }
+    .go_click{
+        font-size: 10px;
+    }
+    .best_item_wrap{
+        display: none;
+    }
+    .insta_title {
+        font-size: 20px;
+    }
+    .insta_ment {
+        font-size: 14px;
+    }
+    .insta_link {
+        font-size: 14px;
+    }
 
 } 
 
 /* 모바일 세로 (해상도 ~ 479px)*/ 
-@media screen and (max-width:479px) {
+@media screen and (max-width:480px) {
+    .main_banner_outer {
+        height: 45vh;
+    }
+    .category_banner_sec {
+        height: 350px;
+    }
+    .ad_ment{
+        font-size: 15px;
+    }
+    .trash_icon {
+        min-width: 100px;
+    }
+    .scroll_array {
+        font-size: 14px;
+    }
+    .category_box{
+        width: calc((100% - (20px * 1)) / 2);
+        height: 100%;
+    }
+    .insta_img {
+        width: calc((100% - (20px * 1)) / 2);
+    }
+    .ad_banner {
+        height: 200px;
+    }
 
 }
