@@ -23,11 +23,11 @@ $(document).ready(function(){
                 top: 0,
                 opacity : '1'
             },500)
-            $('.slogan_box').eq(1).delay(500).animate({
+            $('.slogan_box').eq(1).delay(250).animate({
                 top: 0,
                 opacity : '1'
             },500)
-            $('.slogan_box').eq(2).delay(1000).animate({
+            $('.slogan_box').eq(2).delay(750).animate({
                 top: 0,
                 opacity : '1'
             },500)

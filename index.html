@@ -136,6 +136,7 @@
             </div>
             <div class="category_gallery_wrap">
                 <div class="contents_area">
+                    <div class="category_title">#CATEGORY</div>
                     <div class="category_gallery fadein_up">
                         <div class="category_box">
                             <a href="product.html">
@@ -143,7 +144,7 @@
                                     <div class="category_img" id="all_pro_img"></div>
                                 </div>
                                 <div class="catrgory_title_box">
-                                    <div class="category_title">
+                                    <div class="category_name">
                                         <div class="cate_bigtitle">ALL PRODUCT</div>
                                         <div class="cate_smtitle">전체 상품.</div>
                                     </div>
@@ -157,7 +158,7 @@
                                     <div class="category_img" id="gift_img"></div>
                                 </div>
                                 <div class="catrgory_title_box">
-                                    <div class="category_title">
+                                    <div class="category_name">
                                         <div class="cate_bigtitle">ZERO-WASTE GIFT</div>
                                         <div class="cate_smtitle">선물할 때.</div>
                                     </div>
@@ -171,7 +172,7 @@
                                     <div class="category_img" id="living_img"></div>
                                 </div>
                                 <div class="catrgory_title_box">
-                                    <div class="category_title">
+                                    <div class="category_name">
                                         <div class="cate_bigtitle">LIVING</div>
                                         <div class="cate_smtitle">일상에서.</div>
                                     </div>
@@ -185,7 +186,7 @@
                                     <div class="category_img" id="bath_img"></div>
                                 </div>
                                 <div class="catrgory_title_box">
-                                    <div class="category_title">
+                                    <div class="category_name">
                                         <div class="cate_bigtitle">BATH</div>
                                         <div class="cate_smtitle">욕실에서.</div>
                                     </div>
@@ -199,7 +200,7 @@
                                     <div class="category_img" id="kitchen_img"></div>
                                 </div>
                                 <div class="catrgory_title_box">
-                                    <div class="category_title">
+                                    <div class="category_name">
                                         <div class="cate_bigtitle">KITCHEN</div>
                                         <div class="cate_smtitle">부엌에서.</div>
                                     </div>
@@ -213,7 +214,7 @@
                                     <div class="category_img" id="vegan_img"></div>
                                 </div>
                                 <div class="catrgory_title_box">
-                                    <div class="category_title">
+                                    <div class="category_name">
                                         <div class="cate_bigtitle">VEGAN</div>
                                         <div class="cate_smtitle">마켓갈 때.</div>
                                     </div>
@@ -237,7 +238,7 @@
             <div class="best_item_wrap fadein_up">
                 <div class="bitem_title_box">
                     <div class="bitem_bigtitle">#OFFLINE BEST</div>
-                    <div class="bitem_smtitile">제로띵스 오프라인<br>매장 인기상품</div>
+                    <div class="bitem_smtitile">제로띵스 오프라인 매장 인기상품</div>
                 </div>
                 <div class="contents_area">
                     <div class="best_item_sec">
@@ -396,11 +397,10 @@
     <!-- Initialize Swiper -->
     <script>
         var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 3,
-            spaceBetween: 30,
-            slidesPerGroup: 3,
+            slidesPerView: 2, 
+            spaceBetween: 50,
+            slidesPerGroup: 2,
             loop: true,
-            // loopFillGroupWithBlank: true,
             pagination: {
                 el: ".swiper-pagination",
                 clickable: true,
@@ -416,23 +416,12 @@
             },
             speed: 1500,
             breakpoints: {
-            1440: {
-                slidesPerView: 3,  //브라우저가 1024보다 클 때
-                spaceBetween: 30,
-                slidesPerGroup: 3,
+                768: {
+                    slidesPerView: 3,  //브라우저가 1024보다 클 때
+                    spaceBetween: 50,
+                    slidesPerGroup: 3,
+                },
             },
-            1024: {
-                slidesPerView: 2,  //브라우저가 1024보다 클 때
-                spaceBetween: 50,
-                slidesPerGroup: 2,
-            },
-            768: {
-                slidesPerView: 2,  //브라우저가 1024보다 클 때
-                spaceBetween: 50,
-                slidesPerGroup: 2,
-            },
-
-        },
         });
     </script>
 

@@ -238,6 +238,9 @@
     .ad_ment{
         font-size: 15px;
     }
+    .info_ment_box{
+        width: 80%;
+    }
     .shop_slogan_wrap {
         flex-direction: column;
         align-items: center;
@@ -276,5 +279,11 @@
     .location_sec iframe {
         height: 350px;
     }
-    
+    .info_ment{
+        font-size: 13px;
+    }
+    .mission_ment {
+        font-size: 17px;
+        line-height: 27px;
+    }
 }
