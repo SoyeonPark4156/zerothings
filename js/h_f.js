@@ -114,11 +114,11 @@ $(document).ready(function(){
                 transform : 'rotateX(180deg)'
             })
         }
-        else{
+        else {
             sub_chk = true;
             $('.sub_ul').slideUp(300);
             $('.show_li_btn').css({
-                transform : 'rotateX(180deg)'
+                transform : 'rotateX(0)'
             })
         }
     });
