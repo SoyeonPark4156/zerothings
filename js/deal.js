@@ -102,7 +102,8 @@ let qty_box = document.getElementById('qty_select_box'); //수량 선택 섹션,
 let rs = "";
 function load_data(cate, item){
 
-    rs = ITEM_LIST[cate][item-1]
+    rs = ITEM_LIST[cate][item-1];
+    
 
     $('.item_img_sec img').attr('src',rs.src);
     $('.item_name').text(rs.title);
