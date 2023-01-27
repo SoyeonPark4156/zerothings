@@ -4,7 +4,7 @@ const ITEM_LIST = [
     [
         {item_no:1, src: 'img/items/giftset/main/1.jpg', covered_src: 'img/items/giftset/covered/1.jpg',  desc_src:'img/items/giftset/desc/1.jpg', title:'[Gift Set] 크리스마스 제로웨이스트 키트', o_price:30700, s_price:28900, opt:'Green(샴푸바),Red(바디워시바)'},
         {item_no:2, src: 'img/items/giftset/main/2.jpg', covered_src: 'img/items/giftset/covered/2.jpg',  desc_src:'img/items/giftset/desc/2.jpg', title:'[제로웨이스트 키트] 여행용 트래블 키트', o_price:48200, s_price:44900},
-        {item_no:3, src: 'img/items/giftset/main/3.jpg', covered_src: 'img/items/giftset/covered/3.jpg',  desc_src:'img/items/giftset/desc/3.jpg', title:'[제로웨이스트 키트] 다회용 빨대 SET (유리,스텐빨대/파우치/세척솔)', o_price:9000, s_price:44900, opt:'코튼세트,린넨세트'},
+        {item_no:3, src: 'img/items/giftset/main/3.jpg', covered_src: 'img/items/giftset/covered/3.jpg',  desc_src:'img/items/giftset/desc/3.jpg', title:'[제로웨이스트 키트] 다회용 빨대 SET (유리,스텐빨대/파우치/세척솔)', o_price:9000, s_price:4900, opt:'코튼세트,린넨세트'},
         {item_no:4, src: 'img/items/giftset/main/4.jpg', covered_src: 'img/items/giftset/covered/4.jpg',  desc_src:'img/items/giftset/desc/4.jpg', title:'[제로웨이스트키트] For Kitchen (주방용) 키트_추석선물세트', o_price:11000, s_price:9700, opt:'물방울 수세미,네모수세미'},
         {item_no:5, src: 'img/items/giftset/main/5.jpg', covered_src: 'img/items/giftset/covered/5.jpg',  desc_src:'img/items/giftset/desc/5.jpg', title:'[제로띵스 PICK] 시원한 SET', o_price:28300, s_price:26900},
         {item_no:6, src: 'img/items/giftset/main/6.jpg', covered_src: 'img/items/giftset/covered/6.jpg',  desc_src:'img/items/giftset/desc/6.jpg', title:'[제로웨이스트 키트] 키즈 세트 (아이용)', o_price:27900, s_price:25900, opt:'하양칫솔,분홍칫솔,파란칫솔'},
